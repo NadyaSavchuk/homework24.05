@@ -1,0 +1,118 @@
+header{
+    background-color: $p1;
+    color: white;
+    padding: 15px;
+    #logo{
+        display: flex;
+        align-items: center;
+        align-content: flex-start;
+        img{
+            height: 60px;
+            margin-right: 5px;
+        }
+        p{
+            margin: 0;
+            &:first-of-type{}
+            font-family: 'Gabriola Regular';
+            // font-style: italic;
+            font-size: 39pt;
+            line-height: 20pt;
+            span:first-of-type{
+                font-family: $font-bold;
+                font-size: 20pt;
+                text-transform: uppercase;
+                color: $p3;
+            }
+            &:last-of-type{
+                font-family: $font-regular;
+                font-size: 12pt;
+            }
+        }
+    }
+    #navigate{
+        display: flex;
+        align-items: baseline;
+        align-content: flex-start;
+        padding-left: 60px;
+        >*{
+            margin: 0 10px;
+        }
+        div:nth-of-type(1)>a{
+            display: inline-block;
+            padding: 10px 10px;
+            margin: 0 5px;
+            font-family: $font-regular;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+    .burger{
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+        &.phone{
+            border: 1px solid white;
+            padding: 5px;
+            border-radius: 50%;
+        }
+    }
+}
+$dark: grey;
+$light: white;
+$them: $dark;
+
+@mixin theme($param) {
+    @if($param == $dark){
+        color: white !important; 
+    }
+    @else{
+        color: black !important; 
+    }
+}
+body{
+    background-color: $them;
+    // @if($them == grey){
+    //     color: white !important; 
+    // }
+    // @else{
+    //     color: black !important; 
+    // }
+    // @include theme($them)
+}
+@for $i from 1 to 4{
+    .d#{$i+1} {
+        color: red;
+        font-size: 20px+10px/2*3+10pt+20px;
+    }
+}
+.b3{
+    width: 100px;
+    height: 40px;
+    background-color: $d11;
+    font-family: $font-bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.b1{
+    width: 100px;
+    height: 40px;
+    background-color: $p2;
+    font-family: $font-bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#first-text{
+    font-size: 21px;
+}
+#first-text-end{
+    font-size: 14px;
+}
+#yellow-text{
+    color: $p3;
+}

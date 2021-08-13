@@ -1,0 +1,42 @@
+body{
+    background-color: $light;
+}
+.main{
+    margin-top: 50px;
+    margin-bottom: 300px;
+}
+h3{
+    font-size: 27pt;
+}
+.liststyle>li{
+    list-style: none;
+    font-family: $font-regular;
+    background-color: $l31;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    height: 50px;
+    cursor: pointer;
+}
+ul>li>img{
+    margin-right: 10px;
+}
+.subtitle{
+    color: $p4 !important;
+}
+#checked{
+    background-color: $light;
+    border: 2px solid $p1;
+    margin-top: 30px;
+    padding: 20px;
+}
+#checked>span{
+    font-family: $font-regular;
+    padding-left: 15px;
+}
+#checked>p{
+    color: $p4;
+}
+#checked>img{
+    margin-left: 15px;
+}

@@ -1,0 +1,28 @@
+h1, h2, h3, h4, h5, h6, ul, body {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    @include typography(35pt, $font-bold)
+}
+h2{
+    @include typography(33pt, $font-medium)
+}
+h3{
+    @include typography(27pt, $font-medium)
+}
+h4{
+    @include typography(22pt, $font-medium)
+}
+h5{
+    @include typography(17pt, $font-medium)
+}
+h3{
+    @include typography(15pt, $font-medium)
+}
+p{
+    @include typography(12pt, $font-regular)
+}
+p.subtitle{
+    @include typography(16pt, $font-medium, inherit)
+}
